@@ -1,0 +1,5 @@
+{
+    "JWT_SECRET": "UutRQQoirEbuDp9sAGgq",
+    "JWT_ISS": "musicplayin",
+    "SALT_ROUNDS": 10
+}
