@@ -1,13 +1,8 @@
-import express from 'express';
-const Router = require('express-promise-router')();
-import passport from 'passport';
-import passpostConfig from '../passport';
+import Router from './index';
 
 import { signup, signin, check } from '../controllers/users';
 import { vaildateUser, schemas } from '../helpers/users';
-
-const passportLocal = passport.authenticate('local', { session: false });
-const passportJwt = passport.authenticate('jwt', { session: false });
+import { passportJwt, passportLocal } from './index';
 
 Router
     .route('/signup')
