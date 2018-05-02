@@ -20,7 +20,7 @@ const tabModel = {
         required: true
     },
     lyric: {
-        type: String
+        type: [String]
     },
     chords: {
         type: [String]

@@ -28,7 +28,7 @@ export const schemas = {
             genre: Joi.string()
         }),
         text: Joi.strict().required(),
-        lyric: Joi.string(),
+        lyric: Joi.array() || Joi.string(),
         chords: Joi.array(),
         rank: Joi.number(),
         isDeleted: Joi.boolean()
@@ -45,7 +45,7 @@ export const schemas = {
             genre: Joi.string()
         }),
         text: Joi.strict(),
-        lyric: Joi.string(),
+        lyric: Joi.array() || Joi.string(),
         chords: Joi.array(),
         rank: Joi.number(),
         isDeleted: Joi.boolean()
